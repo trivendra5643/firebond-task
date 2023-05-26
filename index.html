@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hiring Assignment</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<div class="arg-content">
+			<div id="arguments-container">
+        <div class="arguments">
+          <input type="text" name="argumentName" value="My Arg">
+          <select name="argumentValue">
+            <option value="true">True</option>
+            <option value="false" selected>False</option>
+          </select>
+        </div>
+      </div>
+      <button id="add-argument">+ add arg</button>             
+    </div>
+        <div class="ops-form">
+            <div id="operations-container">
+                <div class="operation">
+                  <select class="operation-select" name="operation">
+                    <option value="" disabled selected>select...</option>
+                    <option value="constant">constant</option>
+                    <option value="argument">argument</option>
+                    <option value="and">and</option>
+                    <option value="or">or</option>
+                  </select>
+                  <select class="value-select" name="value" style="display: none;" disabled>
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                  </select>
+                  <select class="argument-select" name="argument" style="display: none;" disabled>
+                    <option value="" disabled selected>select...</option>
+                  </select>
+                  <button class="remove-operation">x</button>
+                  <div class="child-operations">
+                    <!-- Child operations will be added here -->
+                  </div>
+                  <button id="add-operation" style="display: none;">+ add op</button>
+                </div>
+              </div>
+        </div>
+        <div id="result">result: undefined</div>
+  </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

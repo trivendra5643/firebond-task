@@ -1,0 +1,27 @@
+.arguments {
+    display: flex;
+    align-items: center;
+}
+
+.arg-content {
+    margin-bottom: 20px;
+}
+
+.operation {
+    display: flex;
+    align-items: center;
+}
+
+.ops-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.child-operation {
+    margin-left: 5px; 
+    margin-top: 50px;
+}
